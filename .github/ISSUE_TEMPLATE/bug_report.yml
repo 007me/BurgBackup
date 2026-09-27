@@ -1,0 +1,65 @@
+name: Bug report
+description: Report a reproducible Burg Backup problem
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Burg Backup is maintained on a best-effort basis with no guaranteed response time.
+        **Do not post passwords, private SSH keys, private backup data or other secrets.**
+  - type: input
+    id: version
+    attributes:
+      label: Burg Backup version
+      placeholder: 2.1.0
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 24H2 x64
+    validations:
+      required: true
+  - type: dropdown
+    id: job
+    attributes:
+      label: Backup job / destination type
+      options:
+        - SFTP
+        - UNC / SMB / NAS
+        - Restore
+        - Installer / upgrade
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and the result you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. ...
+2. ...
+3. ..."
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log excerpt
+      description: Remove usernames, server names, sensitive paths and any secrets if necessary.
+      render: text
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Safety checks
+      options:
+        - label: I removed passwords, private keys and sensitive backup data from this report.
+          required: true
