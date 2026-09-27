@@ -9,7 +9,7 @@
 
 Burg Backup is a Windows desktop application that provides a graphical interface around the restic backup engine. It is intended for users who want encrypted, versioned backups with Windows-oriented scheduling, logging, restore, NAS/SMB and SFTP support without having to build restic command lines manually.
 
-[עברית](README-HE.md) · [Hebrew user manual](/007me/BurgBackup/releases/download/v2.1.0/BurgBackup-2.1.0-Manual-HE.html) · [English user manual](/007me/BurgBackup/releases/download/v2.1.0/BurgBackup-2.1.0-Manual-EN.html) · [Support policy](SUPPORT.md) · [Security](SECURITY.md) · [Privacy](PRIVACY.md)
+[עברית](README-HE.md) · [Hebrew user manual](https://github.com/007me/BurgBackup/blob/main/docs/BurgBackup-2.1.0-Manual-HE.html) · [English user manual](https://github.com/007me/BurgBackup/blob/main/docs/BurgBackup-2.1.0-Manual-EN.html) · [Support policy](SUPPORT.md) · [Security](SECURITY.md) · [Privacy](PRIVACY.md)
 ## Download
 
 Download the installer from the **Releases** section of this repository. For each release, verify the published SHA-256 checksum before installing.
