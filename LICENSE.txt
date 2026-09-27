@@ -1,0 +1,25 @@
+© 2026 Udi Burg. All rights reserved, subject to applicable law and the licenses of third-party components.
+
+BURG BACKUP FREEWARE LICENSE
+
+Burg Backup was developed through the initiative, specification, design, planning and management of Udi Burg. All intellectual property rights, including copyright to the extent provided by law, in the original components of Burg Backup and in their structure, arrangement, selection and combination, are reserved to Udi Burg.
+
+1. FREE USE. Burg Backup may be used free of charge for personal, educational, non-profit, and commercial or internal business purposes. No purchase or license fee is required for use under these terms.
+
+2. OWNERSHIP. Burg Backup is freeware, not public-domain software. Free use does not transfer ownership, copyright, source-code rights, or any other intellectual property rights to the user.
+
+3. REDISTRIBUTION. The original, unmodified Burg Backup installer may be copied and redistributed free of charge, provided that it is distributed in its complete original form and that all copyright notices, this license, and all third-party license notices remain intact. Burg Backup itself may not be sold, rented, sublicensed, or made subject to a separate usage fee without the prior express written permission of Udi Burg.
+
+4. NO MODIFICATION OR DERIVATIVE WORKS. Without the prior express written permission of Udi Burg, Burg Backup may not be modified, adapted, translated, patched, rebranded, repackaged as a modified product, incorporated into a derivative product, or used to create a derivative work. Possession of or access to any source code does not grant permission to modify or redistribute that source code.
+
+5. REVERSE ENGINEERING. The software may not be disassembled, decompiled, reverse engineered, or otherwise analyzed for the purpose of creating or modifying a competing or derivative product, except to the extent that such restriction is prohibited by applicable law.
+
+6. THIRD-PARTY COMPONENTS. Third-party components included with or used by Burg Backup, including restic, remain subject to their own respective licenses. Nothing in this license limits rights granted directly by those third-party licenses.
+
+7. NO WARRANTY. Burg Backup is provided "AS IS", without warranty of any kind, express or implied, to the maximum extent permitted by applicable law. The software is intended to assist with backup and recovery, but no guarantee is made that every backup or restore operation will succeed or that data loss, corruption, interruption, or other damage cannot occur. Users are responsible for verifying their backups and restore procedures.
+
+8. LIMITATION OF LIABILITY. To the maximum extent permitted by applicable law, Udi Burg shall not be liable for any direct, indirect, incidental, special, consequential, or other damages arising from the use of or inability to use Burg Backup, including loss of data, loss of profits, business interruption, or recovery costs.
+
+9. PERMISSION FOR CHANGES. Any permission to modify, adapt, rebrand, redistribute a modified version, or create a derivative work must be obtained in advance and in writing from Udi Burg.
+
+Use of Burg Backup constitutes acceptance of these terms.
