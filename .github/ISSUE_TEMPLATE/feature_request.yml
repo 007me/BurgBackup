@@ -1,0 +1,36 @@
+name: Feature request
+description: Suggest an improvement for Burg Backup
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggestions are welcome, but there is no commitment to implement a request or to a delivery schedule.
+  - type: textarea
+    id: need
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Suggested behavior
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Backup sources
+        - SFTP
+        - UNC / SMB / NAS
+        - Scheduling
+        - Restore
+        - Retention / storage
+        - Alerts / logs
+        - User interface
+        - Installer
+        - Other
