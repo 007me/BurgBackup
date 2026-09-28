@@ -19,6 +19,22 @@ Burg Backup היא תוכנת Windows שמספקת ממשק גרפי למנוע 
 
 > GitHub מוסיף אוטומטית לכל Release קישורים בשם “Source code (zip)” ו-“Source code (tar.gz)”. קבצים אלה מכילים רק את הקבצים הציבוריים שבמאגר התיעוד וההפצה הזה. **קוד המקור של Burg Backup אינו נכלל בהם.**
 
+## צילומי מסך
+
+מספר דוגמאות מממשק Burg Backup. ניתן ללחוץ על כל צילום כדי לצפות בו בגודל מלא.
+
+### לוח הבקרה
+
+[<img src="assets/screenshots/dashboard.png" alt="לוח הבקרה של Burg Backup" width="900">](assets/screenshots/dashboard.png)
+
+| הגדרת גיבוי | תזמון |
+| --- | --- |
+| [<img src="assets/screenshots/backup.png" alt="הגדרת גיבוי" width="420">](assets/screenshots/backup.png) | [<img src="assets/screenshots/schedule.png" alt="תזמון" width="420">](assets/screenshots/schedule.png) |
+
+| הגדרות התוכנה | התראות ועדכונים |
+| --- | --- |
+| [<img src="assets/screenshots/settings.png" alt="הגדרות התוכנה" width="420">](assets/screenshots/settings.png) | [<img src="assets/screenshots/alerts.png" alt="התראות ועדכונים" width="420">](assets/screenshots/alerts.png) |
+
 ## תכונות עיקריות
 
 - שלושה גיבויים עצמאיים: SFTP ושני יעדי UNC/SMB/NAS עם שמות תצוגה לבחירת המשתמש.
