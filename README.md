@@ -17,6 +17,23 @@ Download the installer from the **Releases** section of this repository. For eac
 
 > GitHub automatically displays “Source code (zip)” and “Source code (tar.gz)” for every release. Those archives contain only the public files in this documentation/distribution repository. **The Burg Backup application source code is not included.**
 
+## Screenshots
+
+A few examples of the Burg Backup interface. Click any screenshot to view it at full size.
+
+### Dashboard
+
+[<img src="assets/screenshots/dashboard.png" alt="Burg Backup Dashboard" width="900">](assets/screenshots/dashboard.png)
+
+| Backup configuration | Scheduling |
+| --- | --- |
+| [<img src="assets/screenshots/backup.png" alt="Backup configuration" width="420">](assets/screenshots/backup.png) | [<img src="assets/screenshots/schedule.png" alt="Scheduling" width="420">](assets/screenshots/schedule.png) |
+
+| Application settings | Alerts and notifications |
+| --- | --- |
+| [<img src="assets/screenshots/settings.png" alt="Application settings" width="420">](assets/screenshots/settings.png) | [<img src="assets/screenshots/alerts.png" alt="Alerts and notifications" width="420">](assets/screenshots/alerts.png) |
+
+
 ## Main features
 
 - Three independent backup jobs: SFTP plus two UNC/SMB/NAS jobs with user-defined display names.
