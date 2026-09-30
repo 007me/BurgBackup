@@ -2,7 +2,6 @@
 
 <p align="center"><img src="assets/Burg-Backup.jpg" alt="Burg Backup" width="120"></p>
 
-
 **Free Windows backup and restore frontend powered by restic**
 
 > **Freeware · Closed source · Windows 11 x64**
@@ -13,7 +12,7 @@ Burg Backup is a Windows desktop application that provides a graphical interface
 
 Download the installer from the **Releases** section of this repository. For each release, verify the published SHA-256 checksum before installing.
 
-**Current release:** 2.1.0
+**Current release:** 2.1.6
 
 > GitHub automatically displays “Source code (zip)” and “Source code (tar.gz)” for every release. Those archives contain only the public files in this documentation/distribution repository. **The Burg Backup application source code is not included.**
 
@@ -28,11 +27,9 @@ A few examples of the Burg Backup interface. Click any screenshot to view it at 
 | Backup configuration | Scheduling |
 | --- | --- |
 | [<img src="assets/screenshots/backup.png" alt="Backup configuration" width="420">](assets/screenshots/backup.png) | [<img src="assets/screenshots/schedule.png" alt="Scheduling" width="420">](assets/screenshots/schedule.png) |
-
 | Application settings | Alerts and notifications |
 | --- | --- |
 | [<img src="assets/screenshots/settings.png" alt="Application settings" width="420">](assets/screenshots/settings.png) | [<img src="assets/screenshots/alerts.png" alt="Alerts and notifications" width="420">](assets/screenshots/alerts.png) |
-
 
 ## Main features
 
@@ -46,22 +43,28 @@ A few examples of the Burg Backup interface. Click any screenshot to view it at 
 - Retention policy and Adaptive Storage management.
 - Restore browser by repository, date, snapshot, folder and file.
 - Hierarchical three-state restore selection in Light and Dark modes.
-- Live backup and restore status, local logs and optional SMTP alerts.
+- UNC-safe restore from mixed local/network-source snapshots.
+- Email alerts through SMTP, Gmail/Google Workspace OAuth 2.0, or Microsoft 365/Outlook.com OAuth 2.0.
+- Manual and optional once-per-day GitHub release checks; Burg Backup notifies only and never installs updates automatically.
+- Live backup and restore status and local logs.
 - SFTP and UNC/SMB/NAS destinations.
 - Import/export of non-secret settings.
 - Light, Dark and Follow Windows appearance modes.
 
-## What's new in 2.1.0
+## What's new in 2.1.6
 
-Version 2.1.0 improves backup of **UNC/SMB network sources**:
+Version 2.1.6 adds **manual and automatic update checks against the official GitHub Releases page**. Automatic checks run only in the interactive GUI, at most once every 24 hours, can be disabled in Settings, and never download or install an update automatically.
 
-- Burg Backup first uses the Windows/SYSTEM access already available when it can recursively read the selected source.
-- If the share root is visible but deeper content is denied and saved source credentials exist, Burg Backup reconnects the share with those credentials before restic starts.
-- The authenticated SMB session remains active for the complete restic backup.
-- **Test Access (Recursive)** checks child folders/files rather than only the share root.
-- If NAS/NTFS ACLs still deny individual child items, readable content is still backed up and denied items are recorded in the job log.
+Changes since the previous public 2.1.0 release also include:
 
-See [CHANGELOG.md](CHANGELOG.md) for the recent release history.
+- Provider-neutral email settings and additional SMTP authentication modes.
+- Gmail / Google Workspace OAuth 2.0 using the Gmail API.
+- Microsoft 365 / Outlook.com OAuth 2.0 using Microsoft Graph `Mail.Send`.
+- OAuth-specific UI cleanup so unused SMTP fields are hidden while OAuth is selected.
+- UNC-safe restore for snapshots that contain network-source roots such as `\\server\share`, including mixed local/UNC snapshots.
+- Existing 2.1.0 network-source recursive access and SMB credential-selection behavior remains in place.
+
+See [CHANGELOG.md](CHANGELOG.md) for the release history.
 
 ## System requirements
 
@@ -71,7 +74,7 @@ See [CHANGELOG.md](CHANGELOG.md) for the recent release history.
 - Windows OpenSSH Client is required for SFTP jobs.
 - An accessible SFTP server or UNC/SMB/NAS share is required as a backup destination.
 
-Burg Backup 2.1.0 bundles the verified **restic 0.19.1** Windows binary.
+Burg Backup 2.1.6 bundles the verified **restic 0.19.1** Windows binary.
 
 ## Important backup warning
 
@@ -82,6 +85,7 @@ Burg Backup is provided **AS IS**, without warranty or SLA. See [LICENSE.txt](LI
 ## Security and secrets
 
 - Repository passwords, SMTP passwords and SMB passwords are protected locally using Windows DPAPI at machine scope.
+- Google and Microsoft OAuth refresh-token material is protected locally using Windows DPAPI and is not included in settings export.
 - The private SFTP SSH key is stored under the protected Burg Backup ProgramData area.
 - Settings export does not include passwords, private SSH keys or machine-protected credentials.
 - The bundled restic executable is loaded from the installed Burg Backup Tools directory rather than from PATH.
@@ -90,7 +94,7 @@ For security reports, follow [SECURITY.md](SECURITY.md). Do not post passwords, 
 
 ## Privacy
 
-Burg Backup 2.1.0 contains no author-operated telemetry or analytics service. It communicates with destinations and services that the user configures. After a repository connection failure it may perform TCP connectivity probes to Microsoft and Google endpoints solely to distinguish an Internet outage from a repository-specific failure. See [PRIVACY.md](PRIVACY.md).
+Burg Backup 2.1.6 contains no author-operated telemetry or analytics service. Optional update checking sends a standard unauthenticated HTTPS request to GitHub's public Releases API; it sends no backup data, Burg Backup account information or unique device identifier. See [PRIVACY.md](PRIVACY.md).
 
 ## Support model
 
